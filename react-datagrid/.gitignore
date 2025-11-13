@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Local Node.js installation for testing
+node-v*/
+*.tar.xz
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
