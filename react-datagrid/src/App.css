@@ -30,7 +30,9 @@
 }
 
 .info-section,
-.features-section {
+.features-section,
+.demo-section,
+.event-log-section {
   background: #f9f9f9;
   border-radius: 8px;
   padding: 2rem;
@@ -38,10 +40,67 @@
 }
 
 .info-section h2,
-.features-section h2 {
+.features-section h2,
+.demo-section h2,
+.event-log-section h2 {
   color: #213547;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.demo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.editable-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #213547;
+}
+
+.editable-toggle input[type='checkbox'] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.event-log {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.event-log ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-log li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.event-log li:last-child {
+  border-bottom: none;
+}
+
+.no-events {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
 }
 
 .counter-demo {
